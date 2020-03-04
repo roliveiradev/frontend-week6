@@ -29,8 +29,8 @@ async componentDidMount() {
   subscribeToNewFiles = () => {
 
     const box = this.props.match.params.id;
-    //const socket = io("https://rroweek-backend.herokuapp.com");
-    const socket = io("http://localhost.com.br:3333");
+    const socket = io("https://roliveirabox.herokuapp.com");
+    //const socket = io("http://localhost.com.br:3333");
     
     socket.emit("connectRoom", box);
 
