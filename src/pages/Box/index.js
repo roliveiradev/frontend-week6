@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import { distanceInWords } from 'date-fns';
 import pt from 'date-fns/locale/pt'
 import Dropzone from 'react-dropzone';
@@ -55,7 +56,7 @@ async componentDidMount() {
       <img src={logo} alt="" />
       <h1>{this.state.box.title}</h1>
       </header>
-      <p><MdHome size={24} color="#A5Cfff"/></p>
+      <Link to="/boxes"><p><MdHome size={24} color="#A5Cfff"/></p></Link>
       
 
       <Dropzone onDropAccepted={this.handleUpload}>
